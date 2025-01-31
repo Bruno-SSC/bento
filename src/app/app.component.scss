@@ -1,0 +1,58 @@
+.container {
+  position: relative;
+  width: 80vw;
+  height: 80vh;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1.2fr repeat(2, 1fr); 
+  gap: 10px; 
+  overflow: hidden;
+}
+
+.image_1 {
+  z-index: 10;
+  background-color: #000;
+}
+
+.image_2 {
+  z-index: 9;
+  grid-row: span 2;
+  grid-column: 1;
+  background-color: red;
+}
+
+.image_3 {
+  grid-column: 2 / span 2;
+  grid-row: 1;
+  background-color: blue;
+}
+
+.image_4 {
+  grid-column: 2;
+  grid-row: 2;
+  background-color: yellow;
+}
+
+.image_5 {
+  grid-column: 3;
+  grid-row: 2;
+  background-color: green;
+}
+
+.image_6 {
+  grid-column: 2;
+  grid-row: 3;
+  background-color: gray;
+}
+
+.image_7 {
+  grid-column: 3 / span 4;
+  grid-row: 3;
+  background-color: brown;
+}
+
+.image_8 {
+  grid-column: 4;
+  grid-row: 1 / span 2;
+  background-color: brown;
+}
