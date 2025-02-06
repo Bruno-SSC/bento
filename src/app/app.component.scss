@@ -1,298 +1,91 @@
 @import "variables.scss";
 
-.container {
-  position: relative;
-  display: grid;
-  height: 730px;
-  width: 1000px;
-  grid-template-columns: 0.8fr repeat(2, 1fr) 0.8fr;
-  grid-template-rows: repeat(3, 1fr);
-  grid-gap: 15px;
-  overflow: hidden;
-  font-size: 16px;
-}
+@media screen and (max-width: $mobile_max) {
+  .container {
+    position: relative;
+    display: grid;
+    grid-template-columns: 330px;
+    grid-template-rows: 200px 160px 200px 400px 350px 200px 500px;
+    grid-gap: 15px;
+    font-size: 12px;
+  }
 
-.container__column_left {
-  grid-row: 1 / span 3;
-  display: grid;
-  grid-gap: inherit;
-  grid-template-rows: repeat(2, 1fr);
-}
+  .container__column_left {
+    grid-row: 7;
+    display: grid;
+    grid-gap: inherit;
+    grid-template-rows: repeat(2, 1fr);
+  }
 
-.container,
-.container__column_lef {
-  div {
-    border-radius: 5px;
+  app-social-media {
+    grid-row: 1; // interactions child <-> parent are cut down because of angular encapsulation of components.
+  }
+
+  app-multiple-platforms {
+    grid-row: 2;
+    overflow: hidden;
+  }
+
+  app-consistent-schedule {
+    grid-row: 3;
+  }
+
+  app-schedule-posts {
+    grid-row: 4;
+  }
+
+  app-grow-followers {
+    grid-row: 5;
+  }
+
+  app-audience-growth {
+    grid-row: 6;
   }
 }
 
-.create_post {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 15px;
-  padding: 50px 0px;
-  background-color: $yellow_100;
-}
+@media screen and (min-width: $tablet_max) {
+  .container {
+    position: relative;
+    display: grid;
+    height: 730px;
+    width: 1000px;
+    grid-template-columns: 0.8fr repeat(2, 1fr) 0.8fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 15px;
+    overflow: hidden;
+    font-size: 14px;
+  }
 
-.create_post__text {
-  line-height: 2em;
-}
+  .container__column_left {
+    grid-row: 1 / span 3;
+    display: grid;
+    grid-gap: inherit;
+    grid-template-rows: repeat(2, 1fr);
+  }
 
-.create_post__text_title {
-  font-size: 2em;
-  font-weight: 500;
-}
+  app-social-media {
+    grid-column: 2 / span 2; // interactions child <-> parent are cut down because of angular encapsulation of components.
+  }
 
-.create_post__text_highlight {
-  font-size: 2em;
-  color: $purple_500;
-  font-weight: 500;
-}
+  app-multiple-platforms {
+    grid-column: 2;
+    overflow: hidden;
+  }
 
-.create_post__img_div {
-  width: 70%;
-  text-align: center;
-}
+  app-consistent-schedule {
+    overflow: hidden;
+  }
 
-.create_post__img {
-  width: 100%;
-  object-fit: cover;
-}
+  app-audience-growth {
+    grid-column: 2;
+  }
 
-.ai_content {
-  background-color: $yellow_500;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 25px;
-}
+  app-grow-followers {
+    grid-column: 3 / span 2;
+  }
 
-.ai_content__text {
-  line-height: 2em;
-}
-
-.ai_content__text_title {
-  font-size: 2em;
-  font-weight: 500;
-}
-
-.ai_content__text_highlight {
-  font-size: 2em;
-  color: $purple_500;
-  font-weight: 500;
-}
-
-.ai_content__img_div {
-  width: 100%;
-  text-align: center;
-}
-
-.ai_content__img {
-  width: 100%;
-  object-fit: cover;
-}
-
-.social_media {
-  grid-column: 2 / span 2;
-  background-color: #7651dc;
-  color: #fff;
-  padding: 30px;
-}
-
-.social_media__text {
-  width: 100%;
-  text-align: center;
-  padding-bottom: 15px;
-}
-
-.social_media__text_title {
-  font-size: 3em;
-}
-
-.social_media__speed {
-  color: $yellow_500;
-}
-
-.social_media__stars_review {
-  width: 100%;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.social_media__img_div {
-  width: 40%;
-}
-
-.social_media__img {
-  width: 100%;
-  object-fit: cover;
-}
-
-.multiple_platforms {
-  grid-column: 2;
-  background-color: $white;
-  padding: 20px;
-  overflow: hidden;
-}
-
-.multiple_platforms__img_div {
-  width: 100%;
-  height: 30%;
-  margin-bottom: 20px;
-}
-
-.multiple_platforms__img {
-  height: 100%;
-  object-fit: cover;
-}
-
-.multiple_platforms__text {
-  width: 100%;
-  line-height: 1.4em;
-}
-
-.multiple_platforms__text_title {
-  font-size: 1.6em;
-  font-weight: 500;
-}
-
-.consistent_schedule {
-  background-color: $yellow_500;
-  padding: 20px;
-  padding-bottom: 0;
-  overflow: hidden;
-}
-
-.consistent_schedule__text {
-  width: 100%;
-  line-height: 1.4em;
-  margin-bottom: 20px;
-}
-
-.consistent_schedule__text_title {
-  font-size: 1.6em;
-  font-weight: 500;
-}
-
-.consistent_schedule__img_div {
-  text-align: center;
-  background-color: $white;
-  width: 100%;
-}
-
-.consistent_schedule__img {
-  width: 100%;
-  object-fit: cover;
-}
-
-.audience_growth {
-  background-color: $white;
-  padding: 20px;
-  grid-column: 2;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-}
-
-.audience_growth__text {
-  width: 100%;
-  line-height: 3em;
-  margin-bottom: 20px;
-}
-
-.audience_growth__text_title {
-  font-size: 3em;
-  font-weight: 500;
-}
-
-.audience_growth__img_div {
-  text-align: center;
-  background-color: $white;
-  width: 80%;
-}
-
-.audience_growth__img {
-  width: 100%;
-  object-fit: cover;
-}
-
-.grow_followers {
-  background-color: $purple_500;
-  grid-column: 3 / span 2;
-  overflow: hidden;
-  padding: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
-
-.grow_followers__text {
-  width: 50%;
-  line-height: 2em;
-  margin-bottom: 20px;
-  color: #fff;
-}
-
-.grow_followers__text_title {
-  font-size: 2em;
-  font-weight: 500;
-}
-
-.grow_followers__img_div {
-  text-align: center;
-  background-color: $white;
-  width: 40%;
-}
-
-.grow_followers__img {
-  width: 100%;
-  object-fit: cover;
-}
-
-.schedule_posts {
-  grid-column: 4;
-  grid-row: 1 / span 2;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  gap: 10px;
-  background-color: $purple_100;
-}
-
-.schedule_posts__text {
-  width: 100%;
-  line-height: 2em;
-  margin-bottom: 20px;
-}
-
-.schedule_posts__text_title {
-  font-size: 1.7em;
-  font-weight: 500;
-}
-
-.schedule_posts__img_div {
-  text-align: center;
-  width: 160%;
-}
-
-.schedule_posts__img {
-  width: 100%;
-  object-fit: cover;
-}
-
-.schedule_posts__subtext {
-  width: 100%;
-  line-height: 1em;
-  margin-bottom: 20px;
-}
-
-.schedule_posts__subtext_title {
-  font-size: 1em;
-  font-weight: 500;
+  app-schedule-posts {
+    grid-column: 4;
+    grid-row: 1 / span 2;
+  }
 }

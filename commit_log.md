@@ -5,4 +5,6 @@ com1
 com2
     basically done with the desktop elements. 
 com3
-    updated the classes name for better semantic
+    updated the classes name for better semantic.
+com4
+    moved all grid items for isolated components and fairly progress (almost everything) in the mobile base styling. 

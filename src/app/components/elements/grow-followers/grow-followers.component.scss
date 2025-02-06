@@ -1,0 +1,76 @@
+@import "variables.scss";
+
+@media screen and (max-width: $mobile_max) {
+  .grow_followers {
+    height: 100%;
+    border-radius: 5px;
+    background-color: $purple_500;
+    overflow: hidden;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .grow_followers__text {
+    width: 70%;
+    line-height: 2em;
+    color: #fff;
+  }
+
+  .grow_followers__text_title {
+    text-align: center;
+    font-size: 2em;
+    font-weight: 500;
+  }
+
+  .grow_followers__img_div {
+    border-radius: 15px;
+    text-align: center;
+    background-color: $white;
+    width: 70%;
+  }
+
+  .grow_followers__img {
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+@media screen and (min-width: $tablet_max) {
+  .grow_followers {
+    height: 100%;
+    border-radius: 5px;
+    background-color: $purple_500;
+    overflow: hidden;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .grow_followers__text {
+    width: 50%;
+    line-height: 2em;
+    margin-bottom: 20px;
+    color: #fff;
+  }
+
+  .grow_followers__text_title {
+    font-size: 2em;
+    font-weight: 500;
+  }
+
+  .grow_followers__img_div {
+    text-align: center;
+    background-color: $white;
+    width: 40%;
+  }
+
+  .grow_followers__img {
+    width: 100%;
+    object-fit: cover;
+  }
+}

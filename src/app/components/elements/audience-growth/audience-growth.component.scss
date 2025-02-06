@@ -1,0 +1,73 @@
+@import "variables.scss";
+
+@media screen and (max-width: $mobile_max) {
+  .audience_growth {
+    height: 100%;
+    border-radius: 5px;
+    background-color: $white;
+    padding: 20px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .audience_growth__text {
+    width: 100%;
+    line-height: 3em;
+  }
+
+  .audience_growth__text_title {
+    font-size: 3em;
+    font-weight: 500;
+  }
+
+  .audience_growth__text_p {
+    font-size: 1.3em;
+  }
+
+  .audience_growth__img_div {
+    background-color: $white;
+    width: 50%;
+  }
+
+  .audience_growth__img {
+    width: 100%;
+    object-fit: contain;
+  }
+}
+
+@media screen and (min-width: $tablet_max) {
+  .audience_growth {
+    border-radius: 5px;
+    background-color: $white;
+    padding: 20px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .audience_growth__text {
+    width: 100%;
+    line-height: 3em;
+    margin-bottom: 20px;
+  }
+
+  .audience_growth__text_title {
+    font-size: 3em;
+    font-weight: 500;
+  }
+
+  .audience_growth__img_div {
+    text-align: center;
+    background-color: $white;
+    width: 80%;
+  }
+
+  .audience_growth__img {
+    width: 100%;
+    object-fit: cover;
+  }
+}

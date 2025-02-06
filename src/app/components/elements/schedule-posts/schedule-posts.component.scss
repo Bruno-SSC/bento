@@ -1,0 +1,90 @@
+@import "variables.scss";
+
+@media screen and (max-width: $mobile_max) {
+  .schedule_posts {
+    height: 100%;
+    border-radius: 5px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    background-color: $purple_100;
+  }
+
+  .schedule_posts__text {
+    text-align: center;
+    width: 100%;
+  }
+
+  .schedule_posts__text_title {
+    font-size: 1.7em;
+    font-weight: 500;
+  }
+
+  .schedule_posts__img_div {
+    text-align: center;
+    width: 100%;
+  }
+
+  .schedule_posts__img {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .schedule_posts__subtext {
+    text-align: center;
+    width: 100%;
+    line-height: 1.4em;
+  }
+
+  .schedule_posts__subtext_title {
+    font-size: 1.3em;
+    font-weight: 500;
+  }
+}
+
+@media screen and (min-width: $tablet_max) {
+  .schedule_posts {
+    height: 100%;
+    border-radius: 5px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 10px;
+    background-color: $purple_100;
+  }
+
+  .schedule_posts__text {
+    width: 100%;
+    line-height: 2em;
+    margin-bottom: 20px;
+  }
+
+  .schedule_posts__text_title {
+    font-size: 1.7em;
+    font-weight: 500;
+  }
+
+  .schedule_posts__img_div {
+    text-align: center;
+    width: 160%;
+  }
+
+  .schedule_posts__img {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .schedule_posts__subtext {
+    width: 100%;
+    line-height: 1em;
+    margin-bottom: 20px;
+  }
+
+  .schedule_posts__subtext_title {
+    font-size: 1em;
+    font-weight: 500;
+  }
+}

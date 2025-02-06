@@ -1,0 +1,77 @@
+@import "variables.scss";
+
+@media screen and (max-width: $mobile_max) {
+  .ai_content {
+    border-radius: 5px;
+    height: 100%;
+    background-color: $yellow_500;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    padding: 25px;
+    padding-right: 60px;
+  }
+
+  .ai_content__text {
+    line-height: 2em;
+  }
+
+  .ai_content__text_title {
+    font-size: 2em;
+    font-weight: 500;
+  }
+
+  .ai_content__text_highlight {
+    font-size: 2em;
+    color: $purple_500;
+    font-weight: 500;
+  }
+
+  .ai_content__img_div {
+    width: 75%;
+    text-align: center;
+  }
+
+  .ai_content__img {
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+@media screen and (min-width: $tablet_max) {
+  .ai_content {
+    border-radius: 5px;
+    height: 100%;
+    background-color: $yellow_500;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 25px;
+  }
+
+  .ai_content__text {
+    line-height: 2em;
+  }
+
+  .ai_content__text_title {
+    font-size: 2em;
+    font-weight: 500;
+  }
+
+  .ai_content__text_highlight {
+    font-size: 2em;
+    color: $purple_500;
+    font-weight: 500;
+  }
+
+  .ai_content__img_div {
+    width: 100%;
+    text-align: center;
+  }
+
+  .ai_content__img {
+    width: 100%;
+    object-fit: cover;
+  }
+}

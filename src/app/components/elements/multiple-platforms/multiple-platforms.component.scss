@@ -1,0 +1,61 @@
+@import "variables.scss";
+
+@media screen and (max-width: $mobile_max) {
+  .multiple_platforms {
+    height: 100%;
+    border-radius: 5px;
+    background-color: $white;
+    padding: 20px;
+    overflow: hidden;
+  }
+
+  .multiple_platforms__img_div {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .multiple_platforms__img {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .multiple_platforms__text {
+    width: 100%;
+    line-height: 1.4em;
+  }
+
+  .multiple_platforms__text_title {
+    font-size: 1.6em;
+    font-weight: 500;
+  }
+}
+
+@media screen and (min-width: $tablet_max) {
+  .multiple_platforms {
+    border-radius: 5px;
+    background-color: $white;
+    padding: 20px;
+    overflow: hidden;
+  }
+
+  .multiple_platforms__img_div {
+    width: 150%;
+    margin-bottom: 10px;
+  }
+
+  .multiple_platforms__img {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .multiple_platforms__text {
+    width: 100%;
+    line-height: 1.4em;
+  }
+
+  .multiple_platforms__text_title {
+    width: 170px;
+    font-size: 1.6em;
+    font-weight: 500;
+  }
+}

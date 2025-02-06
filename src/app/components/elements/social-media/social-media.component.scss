@@ -1,0 +1,83 @@
+@import "variables.scss";
+
+@media screen and (max-width: $mobile_max) {
+  .social_media {
+    border-radius: 5px;
+    background-color: #7651dc;
+    color: #fff;
+    padding: 30px;
+    height: 100%;
+  }
+
+  .social_media__text {
+    width: 90%;
+    text-align: center;
+    padding-bottom: 15px;
+  }
+
+  .social_media__text_title {
+    font-size: 2.4em;
+  }
+
+  .social_media__speed {
+    margin-right: .2em;
+    color: $yellow_500;
+  }
+
+  .social_media__stars_review {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .social_media__img_div {
+    width: 70%;
+  }
+
+  .social_media__img {
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+@media screen and (min-width: $tablet_max) {
+  .social_media {
+    border-radius: 5px;
+    background-color: #7651dc;
+    color: #fff;
+    padding: 30px;
+  }
+
+  .social_media__text {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 15px;
+  }
+
+  .social_media__text_title {
+    font-size: 3em;
+  }
+
+  .social_media__speed {
+    color: $yellow_500;
+  }
+
+  .social_media__stars_review {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .social_media__img_div {
+    width: 40%;
+  }
+
+  .social_media__img {
+    width: 100%;
+    object-fit: cover;
+  }
+}
