@@ -8,3 +8,5 @@ com3
     updated the classes name for better semantic.
 com4
     moved all grid items for isolated components and fairly progress (almost everything) in the mobile base styling. 
+com5
+    I'm done with this project already. It's enough ready.
