@@ -2,7 +2,7 @@
 
 ## Status 🔧
 
-I'm working on it.
+Unsure.
 
 ## Requirements 📄
 
@@ -14,11 +14,12 @@ These are the requirements for this project from frontendMentor challenges:
 
 - > [FrontendMentor Challenge Page](https://www.frontendmentor.io/challenges/bento-grid-RMydElrlOj)
 
-<!-- - > [Live Project Link](https://bento.netlify.app)  -->
+- > [Live Project Link](https://bento.netlify.app)  
 
 ## Goal 📌
 
 - Build projects for my angular portfolio.
+- Practice CSS GRID.
 
 ---
 

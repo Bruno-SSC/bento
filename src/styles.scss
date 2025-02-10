@@ -11,20 +11,31 @@
   font-family: $font_family;
 }
 
-body {
-  min-height: 100vh;
-  width: 100vw;
-  overflow: hidden;
-  overflow-y: scroll;
-  display: flex;
-  justify-content: center;
-  padding-top: 25px;
-  background-color: #f5f5f5;
-}
-
 @media screen and (max-width: $mobile-max) {
   body {
+    width: 100vw;
+    min-height: 100vh;
     height: fit-content;
+
+    display: flex;
+    justify-content: center;
+    background-color: #f5f5f5;
+
     padding: 25px;
+    overflow: hidden;
+    overflow-y: scroll;
+  }
+}
+
+@media screen and (min-width: $tablet_max) {
+  body {
+    min-height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    overflow-y: scroll;
+    display: flex;
+    justify-content: center;
+    padding-top: 25px;
+    background-color: #f5f5f5;
   }
 }

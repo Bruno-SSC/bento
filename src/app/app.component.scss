@@ -4,8 +4,8 @@
   .container {
     position: relative;
     display: grid;
-    grid-template-columns: 330px;
-    grid-template-rows: 200px 160px 200px 400px 350px 200px 500px;
+    grid-template-columns: minmax(300px, 700px);
+    grid-template-rows: repeat(7, auto);
     grid-gap: 15px;
     font-size: 12px;
   }
@@ -14,31 +14,37 @@
     grid-row: 7;
     display: grid;
     grid-gap: inherit;
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: 200px 300px;
   }
 
   app-social-media {
+    height: 250px;
     grid-row: 1; // interactions child <-> parent are cut down because of angular encapsulation of components.
   }
 
   app-multiple-platforms {
+    height: 160px;
     grid-row: 2;
     overflow: hidden;
   }
 
   app-consistent-schedule {
+    height: 205px;
     grid-row: 3;
   }
 
   app-schedule-posts {
+    height: 400px;
     grid-row: 4;
   }
 
   app-grow-followers {
+    height: 300px;
     grid-row: 5;
   }
 
   app-audience-growth {
+    height: 200px;
     grid-row: 6;
   }
 }
