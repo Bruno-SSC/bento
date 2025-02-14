@@ -20,7 +20,7 @@
   }
 
   .social_media__speed {
-    margin-right: .2em;
+    margin-right: 0.2em;
     color: $yellow_500;
   }
 
@@ -57,7 +57,9 @@
   }
 
   .social_media__text_title {
-    font-size: 3em;
+    width: 90%;
+    font-size: 4em;
+    margin: auto;
   }
 
   .social_media__speed {

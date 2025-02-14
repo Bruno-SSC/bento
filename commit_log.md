@@ -10,3 +10,5 @@ com4
     moved all grid items for isolated components and fairly progress (almost everything) in the mobile base styling. 
 com5
     I'm done with this project already. It's enough ready.
+com6
+    just a quick few adjustments. Added the page animation and fixed width/positioning of some texts.
